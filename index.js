@@ -11,6 +11,11 @@ app.use(express.json());//req body
 
 
 //create visitor
+app.get("", async (req,res) =>{
+   
+         res.json('Server Is Up!');
+   
+   });
 
 app.post("/visitor", async(req,res) => {
   try {
