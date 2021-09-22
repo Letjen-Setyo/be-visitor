@@ -94,9 +94,13 @@ app.delete("/visitor/:id", async(req,res) => {
     }
 });
 
-
-app.listen(443,() => {
-    console.log("Server Has Started on port 443")
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
+
+// app.listen(80,() => {
+//     console.log("Server Has Started on port 80")
+// });
 
  
