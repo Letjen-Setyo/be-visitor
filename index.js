@@ -11,7 +11,7 @@ app.use(express.json());//req body
 
 
 //create visitor
-app.get("", async (req,res) =>{
+app.get("/healtcheck", async (req,res) =>{
    
          res.json('Server Is Up!');
    
